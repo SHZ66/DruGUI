@@ -1825,7 +1825,7 @@ class DIA(ABase):
         #print 'n', len(which[0])
         if len(which[0]) == 0:
             raise ProbeError('No hotspots found with binding free energy '
-                             'below {0:.f} kcal/mol (~{0:.0f} folds '
+                             'below {0:.f} kcal/mol (~{1:.0f} folds '
                              'enrichment)'.format(delta_g, enrichment))
         spots = zip(-probes.grid.array[which], which[0], which[1], which[2])
         spots = sorted(spots)
